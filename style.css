@@ -144,6 +144,7 @@ ul {
 /* header section */
 header {
     padding: 50px var(--padding-inline-section) 0;
+    margin-top: 80px;
 }
 
 .header-section {
@@ -171,7 +172,7 @@ header {
 /* Company section */
 
 .company-section {
-    margin-top: 90px;
+    margin-top: 200px;
 }
 
 .company-header {
@@ -197,6 +198,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 100px;
 
 }
 
@@ -221,4 +223,163 @@ header {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+}
+
+.features-card img {
+    width: 50px;
+}
+
+
+/* Big Feature Section */
+
+.big-features-section {
+    padding: 30px var(--padding-inline-section) 0;
+    margin-top: 50px;
+}
+
+.big-feature-container {
+    gap: 50px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-desc {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Example section */
+.example-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.example-header {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.example-area {
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.example-card {
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/asset\ 36.jpeg");
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+
+.example-card:hover {
+    box-shadow: 0px 0px 10px #888;
+}
+
+.example-card:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/asset\ 37.jpeg");
+    background-size: cover;
+}
+
+.example-card:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/asset\ 38.jpeg");
+    background-size: cover;
+}
+
+.example-card:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/asset\ 36.jpeg");
+    background-size: cover;
+
+}
+
+.example-card:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("assets/asset\ 39.jpeg");
+    background-size: cover;
+}
+
+.example-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* cta section */
+
+.cta-section {
+    background-color: #183b54;
+    padding: 100px var(--padding-inline-section);
+    color: white;
+}
+
+.cta-section-container {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cta-section-container p {
+    color: white;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.links-columns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer {
+    padding: 50px var(--padding-inline-section);
+    background-color: #ebf2fa;
+
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sub-footer {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+}
+
+.sub-footer-container {
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Chat Icon */
+
+.chat-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.2s ease-out;
+
+}
+
+.fa-message {
+    color: white;
+    text-align: center;
+
+}
+
+.chat-icon:hover {
+    width: 45px;
+    height: 45px;
+    color: var(--accent-dark-color);
 }
